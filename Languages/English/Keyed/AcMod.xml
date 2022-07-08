@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: Wear {0} -->
+	<AcMod_ToggleableHeadgearCommand_Label>Wear {0}</AcMod_ToggleableHeadgearCommand_Label>
+
+	<!-- EN: Toggle wearing {0} attached to apparel. -->
+	<AcMod_ToggleableHeadgearCommand_Desc>Toggle wearing {0} attached to apparel.</AcMod_ToggleableHeadgearCommand_Desc>
+
+</LanguageData>

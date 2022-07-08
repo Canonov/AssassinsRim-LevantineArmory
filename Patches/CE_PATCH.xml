@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Combat Extended</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+            <li Class="PatchOperationAdd"> 
+                <xpath>Defs/ThingDef[defName="Levantine_Altair"]/statBases</xpath>
+                <value>
+                    <Bulk>4</Bulk>
+                    <WornBulk>10</WornBulk>
+                    <CarryWeight>8</CarryWeight>
+                    <CarryBulk>10</CarryBulk>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Levantine_Altair_only"]/statBases</xpath>
+                <value>
+                    <Bulk>4</Bulk>
+                    <WornBulk>10</WornBulk>
+                    <CarryWeight>8</CarryWeight>
+                    <CarryBulk>10</CarryBulk>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd"> 
+                <xpath>Defs/ThingDef[defName="Levantine_Altair_H"]/statBases</xpath>
+                <value>
+                    <Bulk>1</Bulk>
+                    <WornBulk>1</WornBulk>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Levantine_Altair_H_manual"]/statBases</xpath>
+                <value>
+                    <Bulk>1</Bulk>
+                    <WornBulk>1</WornBulk>
+                </value>
+            </li>
+
+
+
+
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Levantine_Melee_Altair"]/tools</xpath>
+                <value>
+                    <tools>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>handle</label>
+                            <capacities>
+                                <li>Poke</li>
+                            </capacities>
+                            <power>3</power>
+                            <cooldownTime>1.69</cooldownTime>
+                            <chanceFactor>0.10</chanceFactor>
+                            <armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+                            <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>point</label>
+                            <capacities>
+                                <li>Stab</li>
+                            </capacities>
+                            <power>20</power>
+                            <cooldownTime>1.69</cooldownTime>
+                            <chanceFactor>0.60</chanceFactor>
+                            <armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+                            <armorPenetrationSharp>1.6</armorPenetrationSharp>
+                            <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+                        </li>
+                        <li Class="CombatExtended.ToolCE">
+                            <label>edge</label>
+                            <capacities>
+                                <li>Cut</li>
+                            </capacities>
+                            <power>36</power>
+                            <cooldownTime>1.56</cooldownTime>
+                            <chanceFactor>0.30</chanceFactor>
+                            <armorPenetrationBlunt>2.592</armorPenetrationBlunt>
+                            <armorPenetrationSharp>0.62</armorPenetrationSharp>
+                            <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+                        </li>
+                    </tools>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Levantine_Melee_Altair"]/statBases</xpath>
+                <value>
+                    <Bulk>8</Bulk>
+                    <MeleeCounterParryBonus>1</MeleeCounterParryBonus>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Levantine_Melee_Altair"]</xpath>
+                <value>
+                    <equippedStatOffsets>
+                        <MeleeCritChance>0.63</MeleeCritChance>
+                        <MeleeParryChance>0.75</MeleeParryChance>
+                        <MeleeDodgeChance>0.4</MeleeDodgeChance>	
+                    </equippedStatOffsets>
+                </value>
+            </li>
+
+
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Levantine_Altair"]/statBases/StuffEffectMultiplierArmor</xpath>
+                <value>
+                    <StuffEffectMultiplierArmor>10</StuffEffectMultiplierArmor>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Levantine_Altair_only"]/statBases/StuffEffectMultiplierArmor</xpath>
+                <value>
+                    <StuffEffectMultiplierArmor>10</StuffEffectMultiplierArmor>
+                </value>
+            </li>
+
+        </operations>
+    </match>
+</Operation>
+</Patch>	

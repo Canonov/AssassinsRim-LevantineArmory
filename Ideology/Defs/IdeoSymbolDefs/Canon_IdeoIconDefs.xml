@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--================= Assassin's Creed ===================-->
+
+	<IdeoIconDef>
+		<defName>Ideoligion_ASSASSIN</defName>
+		<iconPath>UI/Icons/Ideoligion_ASSASSIN</iconPath>
+		<memes>
+			<li>Individualist</li>
+		</memes>
+	</IdeoIconDef>
+
+</Defs>

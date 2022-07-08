@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Medieval Overhaul</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+            <li Class="PatchOperationReplace"> 
+                <xpath>Defs/ThingDef[defName="Levantine_Altair"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace"> 
+                <xpath>Defs/ThingDef[defName="Levantine_Altair_only"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace"> 
+                <xpath>Defs/ThingDef[defName="Levantine_Altair_H_manual"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+                </value>
+            </li>
+
+
+            <li Class="PatchOperationReplace"> 
+                <xpath>Defs/ThingDef[defName="Levantine_Melee_Altair"]/recipeMaker/researchPrerequisite</xpath>
+                <value>
+                    <researchPrerequisite>DankPyon_MilitarySwords</researchPrerequisite>
+                </value>
+            </li>
+
+
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="Levantine_Melee_Altair"]</xpath>
+                <value>
+                    <li Class="VFECore.ThingDefExtension">
+                        <usableWithShields>true</usableWithShields>
+                    </li>
+                </value>
+            </li>
+
+
+        </operations>
+    </match>
+</Operation>
+</Patch>	
