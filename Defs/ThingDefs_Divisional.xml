@@ -1,20 +1,312 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- ############################################################################### -->
-	<!-- #                              Altair                                         # -->
-	<!-- ############################################################################### -->
+  <!-- ############################################################################### -->
+  <!-- #                              Thomas                                         # -->
+  <!-- ############################################################################### -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Levantine_Thomas</defName>
+    <label>Thomas de Carneillon's Assassin Robes (Hooded)</label>
+    <description>A full-body garment crafted by the Brotherhood, it was created for all Master Assassins, but later become iconic for Altair.</description>
+    <graphicData>
+      <texPath>Assassins/AssassinTH</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>140</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>16</Mass>
+      <StuffEffectMultiplierArmor>0.52</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1.7</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>2.7</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>10</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.1</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Assassins/AssassinTH</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Middle</li>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>AcMod_NoSpawn</li>
+      </tags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+    </apparel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <comps>
+      <li Class="AcMod.CompProperties_ApparelWithAttachedHeadgear">
+        <attachedHeadgearDef>Levantine_Thomas_H</attachedHeadgearDef>
+        <toggleUiIconPath>Assassins/AssassinTH_Hood</toggleUiIconPath>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Hood for Eggplant Onesie (This is a dummy ThingDef, which will get called programmatically) -->
+  <ThingDef ParentName="HatBase">
+    <defName>Levantine_Thomas_H</defName>
+    <label>Thomas de Carneillon's Assassin Hood</label>
+    <description>Hood for the Master Assassin Robes.</description>
+    <graphicData>
+      <texPath>Assassins/AssassinTH_Hood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Assassins/AssassinTH_Hood</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>AcMod_NoSpawn</li>
+      </tags>
+    </apparel>
+  </ThingDef>
 
 
+  <!-- ############################################################################### -->
+  <!-- #                              Black                                          # -->
+  <!-- ############################################################################### -->
 
 
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Levantine_Black</defName>
+    <label>Levantine Assassin's Robes (Dark)</label>
+    <description>A full-body garment crafted by the Brotherhood, made in black for greater stealth during night time missions.</description>
+    <graphicData>
+      <texPath>Assassins/AssassinB</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>140</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>16</Mass>
+      <StuffEffectMultiplierArmor>0.52</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1.7</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>2.7</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>10</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.1</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Assassins/AssassinB</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Middle</li>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>AcMod_NoSpawn</li>
+      </tags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+    </apparel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <comps>
+      <li Class="AcMod.CompProperties_ApparelWithAttachedHeadgear">
+        <attachedHeadgearDef>Levantine_Black_H</attachedHeadgearDef>
+        <toggleUiIconPath>Assassins/AssassinB_Hood</toggleUiIconPath>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Hood for Eggplant Onesie (This is a dummy ThingDef, which will get called programmatically) -->
+  <ThingDef ParentName="HatBase">
+    <defName>Levantine_Black_H</defName>
+    <label>Levantine Assassin's Hood</label>
+    <description>Hood for the Master Assassin Robes.</description>
+    <graphicData>
+      <texPath>Assassins/AssassinB_Hood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Assassins/AssassinB_Hood</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>AcMod_NoSpawn</li>
+      </tags>
+    </apparel>
+  </ThingDef>
 
 
+  <!-- ############################################################################### -->
+  <!-- #                              Wolves                                         # -->
+  <!-- ############################################################################### -->
 
 
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Levantine_Wolfpack</defName>
+    <label>Levantine Assassin's Robes (Black and Red)</label>
+    <description>A full-body garment crafted by the Brotherhood, made in black for greater stealth during night time missions, features a red trim.</description>
+    <graphicData>
+      <texPath>Assassins/AssassinWV</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>140</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>16</Mass>
+      <StuffEffectMultiplierArmor>0.52</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1.7</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>2.7</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>10</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.1</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Assassins/AssassinWV</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Middle</li>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>AcMod_NoSpawn</li>
+      </tags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+    </apparel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <comps>
+      <li Class="AcMod.CompProperties_ApparelWithAttachedHeadgear">
+        <attachedHeadgearDef>Levantine_Wolfpack_H</attachedHeadgearDef>
+        <toggleUiIconPath>Assassins/AssassinWV_Hood</toggleUiIconPath>
+      </li>
+    </comps>
+  </ThingDef>
 
-
-
-
-
+  <!-- Hood for Eggplant Onesie (This is a dummy ThingDef, which will get called programmatically) -->
+  <ThingDef ParentName="HatBase">
+    <defName>Levantine_Wolfpack_H</defName>
+    <label>Levantine Assassin's Hood</label>
+    <description>Hood for the Master Assassin Robes.</description>
+    <graphicData>
+      <texPath>Assassins/AssassinWV_Hood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Assassins/AssassinWV_Hood</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>AcMod_NoSpawn</li>
+      </tags>
+    </apparel>
+  </ThingDef>
 </Defs>
