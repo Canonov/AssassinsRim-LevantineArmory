@@ -7,7 +7,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Levantine_Altair</defName>
-    <label>Levantine Assassin's Robes (Hooded)</label>
+    <label>Levantine Assassin's Robes (Master)</label>
     <description>A full-body garment crafted by the Brotherhood, it was created for all Master Assassins, but later become iconic for Altair.</description>
     <graphicData>
       <texPath>Assassins/Assassin</texPath>
@@ -73,7 +73,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Levantine_Altair_only</defName>
-    <label>Levantine Assassin's Robes</label>
+    <label>Levantine Assassin's Robes (Master NoHood)</label>
     <description>A full-body garment crafted by the Brotherhood, it was created for all Master Assassins, but later become iconic for Altair, Hood Not Included.</description>
     <graphicData>
       <texPath>Assassins/Assassin</texPath>
@@ -132,7 +132,7 @@
   <!-- Hood for Eggplant Onesie (This is a dummy ThingDef, which will get called programmatically) -->
   <ThingDef ParentName="HatBase">
     <defName>Levantine_Altair_H</defName>
-    <label>Assassins Hood</label>
+    <label>Levantine Assassin's Hood (Master)</label>
     <description>Hood for the Master Assassin Robes.</description>
     <graphicData>
       <texPath>Assassins/Assassin_Hood</texPath>
@@ -215,7 +215,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Levantine_LR</defName>
-    <label>Levantine Assassin Robes (Hood)</label>
+    <label>Levantine Assassin's Robes</label>
     <description>A full-body garment crafted by the Brotherhood, it was created for lower Ranking Assassins, Hood Included.</description>
     <graphicData>
       <texPath>Assassins/AssassinLR</texPath>
@@ -282,7 +282,7 @@
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Levantine_LR_only</defName>
-    <label>Levantine Assassin Robes</label>
+    <label>Levantine Assassin's Robes (NoHood)</label>
     <description>A full-body garment crafted by the Brotherhood, it was created for lower Ranking Assassins, Hood Not Included.</description>
     <graphicData>
       <texPath>Assassins/AssassinLR</texPath>
@@ -341,7 +341,7 @@
   <!-- Hood for Eggplant Onesie (This is a dummy ThingDef, which will get called programmatically) -->
   <ThingDef ParentName="HatBase">
     <defName>Levantine_LR_H</defName>
-    <label>Assassins Hood</label>
+    <label>Levantine Assassin's Hood</label>
     <description>Hood for the Assassin Robes.</description>
     <graphicData>
       <texPath>Assassins/AssassinLR_Hood</texPath>
