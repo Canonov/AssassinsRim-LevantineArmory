@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- ############################################################################### -->
-	<!-- #                              Altair                                         # -->
-	<!-- ############################################################################### -->
+  <!-- ############################################################################### -->
+  <!-- #                              Altair                                         # -->
+  <!-- ############################################################################### -->
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Levantine_Altair</defName>
@@ -41,8 +41,8 @@
         <li>Shoulders</li>
         <li>Arms</li>
         <li>Legs</li>
-				<li>FullHead</li>
-				<li>Neck</li>
+        <li>FullHead</li>
+        <li>Neck</li>
       </bodyPartGroups>
       <wornGraphicPath>Assassins/Assassin</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
@@ -63,13 +63,13 @@
       </recipeUsers>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
-		<comps>
-			<li Class="AcMod.CompProperties_ApparelWithAttachedHeadgear">
-				<attachedHeadgearDef>Levantine_Altair_H</attachedHeadgearDef>
-				<toggleUiIconPath>Assassins/Assassin_Hood</toggleUiIconPath>
-			</li>
-		</comps>
- </ThingDef>
+    <comps>
+      <li Class="AcMod.CompProperties_ApparelWithAttachedHeadgear">
+        <attachedHeadgearDef>Levantine_Altair_H</attachedHeadgearDef>
+        <toggleUiIconPath>Assassins/Assassin_Hood</toggleUiIconPath>
+      </li>
+    </comps>
+  </ThingDef>
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Levantine_Altair_only</defName>
@@ -127,21 +127,21 @@
       </recipeUsers>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
- </ThingDef>
+  </ThingDef>
 
-	<!-- Hood for Eggplant Onesie (This is a dummy ThingDef, which will get called programmatically) -->
-	<ThingDef ParentName="HatBase">
-		<defName>Levantine_Altair_H</defName>
-		<label>Assassins Hood</label>
-		<description>Hood for the Master Assassin Robes.</description>
-		<graphicData>
-			<texPath>Assassins/Assassin_Hood</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
+  <!-- Hood for Eggplant Onesie (This is a dummy ThingDef, which will get called programmatically) -->
+  <ThingDef ParentName="HatBase">
+    <defName>Levantine_Altair_H</defName>
+    <label>Assassins Hood</label>
+    <description>Hood for the Master Assassin Robes.</description>
+    <graphicData>
+      <texPath>Assassins/Assassin_Hood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
     <techLevel>Medieval</techLevel>
 
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
     <statBases>
       <WorkToMake>8000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
@@ -151,32 +151,32 @@
       <StuffEffectMultiplierInsulation_Heat>1.7</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>5</EquipDelay>
     </statBases>
-		<apparel>
-			<bodyPartGroups>
-				<li>FullHead</li>
-				<li>Neck</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Assassins/Assassin_Hood</wornGraphicPath>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<tags>
-				<li>AcMod_NoSpawn</li>
-			</tags>
-		</apparel>
-	</ThingDef>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Assassins/Assassin_Hood</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>AcMod_NoSpawn</li>
+      </tags>
+    </apparel>
+  </ThingDef>
 
-	<ThingDef ParentName="HatMakeableBase">
-		<defName>Levantine_Altair_H_manual</defName>
-		<label>Levantine Master Assassin's Hood</label>
-		<description>Hood for the Master Assassin Robes.</description>
-		<graphicData>
-			<texPath>Assassins/Assassin_Hood</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Levantine_Altair_H_manual</defName>
+    <label>Levantine Master Assassin's Hood</label>
+    <description>Hood for the Master Assassin Robes.</description>
+    <graphicData>
+      <texPath>Assassins/Assassin_Hood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>false</destroyOnDrop>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>false</destroyOnDrop>
     <costList>
       <Cloth>50</Cloth>
     </costList>
@@ -190,20 +190,20 @@
       <StuffEffectMultiplierInsulation_Heat>1.7</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>5</EquipDelay>
     </statBases>
-		<apparel>
-			<bodyPartGroups>
-				<li>FullHead</li>
-				<li>Neck</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Assassins/Assassin_Hood</wornGraphicPath>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Assassins/Assassin_Hood</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<tags>
-				<li>AcMod_NoSpawn</li>
-			</tags>
-		</apparel>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>AcMod_NoSpawn</li>
+      </tags>
+    </apparel>
     <recipeMaker>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
@@ -211,15 +211,14 @@
       </recipeUsers>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
-	</ThingDef>
+  </ThingDef>
 
 
+  <!-- ############################################################################### -->
+  <!-- #                              LR ROBES                                       # -->
+  <!-- ############################################################################### -->
 
-	<!-- ############################################################################### -->
-	<!-- #                              LR ROBES                                       # -->
-	<!-- ############################################################################### -->
-
-    <ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>Levantine_LR</defName>
     <label>Levantine Assassin Robes (Hood)</label>
     <description>A full-body garment crafted by the Brotherhood, it was created for lower Ranking Assassins, Hood Included.</description>
@@ -255,8 +254,8 @@
         <li>Shoulders</li>
         <li>Arms</li>
         <li>Legs</li>
-				<li>FullHead</li>
-				<li>Neck</li>
+        <li>FullHead</li>
+        <li>Neck</li>
       </bodyPartGroups>
       <wornGraphicPath>Assassins/AssassinLR</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
@@ -277,13 +276,13 @@
       </recipeUsers>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
-		<comps>
-			<li Class="AcMod.CompProperties_ApparelWithAttachedHeadgear">
-				<attachedHeadgearDef>Levantine_LR_H</attachedHeadgearDef>
-				<toggleUiIconPath>Assassins/AssassinLR_Hood</toggleUiIconPath>
-			</li>
-		</comps>
- </ThingDef>
+    <comps>
+      <li Class="AcMod.CompProperties_ApparelWithAttachedHeadgear">
+        <attachedHeadgearDef>Levantine_LR_H</attachedHeadgearDef>
+        <toggleUiIconPath>Assassins/AssassinLR_Hood</toggleUiIconPath>
+      </li>
+    </comps>
+  </ThingDef>
 
 
   <ThingDef ParentName="ApparelMakeableBase">
@@ -342,21 +341,21 @@
       </recipeUsers>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
- </ThingDef>
+  </ThingDef>
 
-	<!-- Hood for Eggplant Onesie (This is a dummy ThingDef, which will get called programmatically) -->
-	<ThingDef ParentName="HatBase">
-		<defName>Levantine_LR_H</defName>
-		<label>Assassins Hood</label>
-		<description>Hood for the Assassin Robes.</description>
-		<graphicData>
-			<texPath>Assassins/AssassinLR_Hood</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
+  <!-- Hood for Eggplant Onesie (This is a dummy ThingDef, which will get called programmatically) -->
+  <ThingDef ParentName="HatBase">
+    <defName>Levantine_LR_H</defName>
+    <label>Assassins Hood</label>
+    <description>Hood for the Assassin Robes.</description>
+    <graphicData>
+      <texPath>Assassins/AssassinLR_Hood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
     <techLevel>Medieval</techLevel>
 
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
     <statBases>
       <WorkToMake>8000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
@@ -366,32 +365,32 @@
       <StuffEffectMultiplierInsulation_Heat>1.7</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>5</EquipDelay>
     </statBases>
-		<apparel>
-			<bodyPartGroups>
-				<li>FullHead</li>
-				<li>Neck</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Assassins/AssassinLR_Hood</wornGraphicPath>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<tags>
-				<li>AcMod_NoSpawn</li>
-			</tags>
-		</apparel>
-	</ThingDef>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Assassins/AssassinLR_Hood</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>AcMod_NoSpawn</li>
+      </tags>
+    </apparel>
+  </ThingDef>
 
-	<ThingDef ParentName="HatMakeableBase">
-		<defName>Levantine_LR_H_manual</defName>
-		<label>Levantine Assassin's Hood</label>
-		<description>Hood for the Assassin Robes.</description>
-		<graphicData>
-			<texPath>Assassins/AssassinLR_Hood</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Levantine_LR_H_manual</defName>
+    <label>Levantine Assassin's Hood</label>
+    <description>Hood for the Assassin Robes.</description>
+    <graphicData>
+      <texPath>Assassins/AssassinLR_Hood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>false</destroyOnDrop>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>false</destroyOnDrop>
     <costList>
       <Cloth>50</Cloth>
     </costList>
@@ -405,20 +404,20 @@
       <StuffEffectMultiplierInsulation_Heat>1.7</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>5</EquipDelay>
     </statBases>
-		<apparel>
-			<bodyPartGroups>
-				<li>FullHead</li>
-				<li>Neck</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Assassins/AssassinLR_Hood</wornGraphicPath>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Assassins/AssassinLR_Hood</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-			<tags>
-				<li>AcMod_NoSpawn</li>
-			</tags>
-		</apparel>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>AcMod_NoSpawn</li>
+      </tags>
+    </apparel>
     <recipeMaker>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
@@ -426,145 +425,198 @@
       </recipeUsers>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
-	</ThingDef>
+  </ThingDef>
 
 
+  <!-- ############################################################################### -->
+  <!-- #                               WEAPONS                                       # -->
+  <!-- ############################################################################### -->
 
-	<!-- ############################################################################### -->
-	<!-- #                               WEAPONS                                       # -->
-	<!-- ############################################################################### -->
+  <ThingDef ParentName="BaseWeapon">
+    <defName>AppleOfEden</defName>
+    <label>Apple of Eden</label>
+    <description>the Standard sword used by the Levantine Brotherhood of Assassins</description>
+    <graphicData>
+      <texPath>Assassins/AltairSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.15</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <weaponClasses>
+      <li>MeleeBlunt</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2.79</cooldownTime>
+        <armorPenetration>0.25</armorPenetration>
+      </li>
+    </tools>
+		<comps>
+			<li Class="AssassinsRim.CompProperties_CompAppleOfEden">
 
-<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-  <defName>Levantine_Melee_Altair</defName>
-  <label>Levantine Assassin's Sword</label>
-  <description>the Standard sword used by the Levantine Brotherhood of Assassins</description>
-  <graphicData>
-    <texPath>Assassins/AltairSword</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <shaderType>CutoutComplex</shaderType>
-    <drawSize>1.15</drawSize>
-  </graphicData>
-  <techLevel>Medieval</techLevel>
-  <statBases>
-    <WorkToMake>18000</WorkToMake>
-    <Mass>2</Mass>
-  </statBases>
+			</li>
+		</comps>
+  </ThingDef>
 
-  <costStuffCount>100</costStuffCount>
-  <stuffCategories>
-    <li>Metallic</li>
-  </stuffCategories>
-  <equippedAngleOffset>-65</equippedAngleOffset>
-  <weaponClasses>
-    <li>MeleePiercer</li>
-  </weaponClasses>
-  <weaponTags>
-    <li>MedievalMeleeAdvanced</li>
-  </weaponTags>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Levantine_Melee_Altair</defName>
+    <label>Levantine Assassin's Sword</label>
+    <description>the Standard sword used by the Levantine Brotherhood of Assassins</description>
+    <graphicData>
+      <texPath>Assassins/AltairSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.15</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
 
-  <tools>
-    <li>
-      <label>handle</label>
-      <capacities>
-        <li>Poke</li>
-      </capacities>
-      <power>9</power>
-      <cooldownTime>2</cooldownTime>
-    </li>
-    <li>
-      <label>point</label>
-      <capacities>
-        <li>Stab</li>
-      </capacities>
-      <power>23</power>
-      <cooldownTime>2.6</cooldownTime>
-    </li>
-    <li>
-      <label>edge</label>
-      <labelUsedInLogging>false</labelUsedInLogging>
-      <capacities>
-        <li>Cut</li>
-      </capacities>
-      <power>26</power>
-      <cooldownTime>2.79</cooldownTime>
-      <armorPenetration>0.25</armorPenetration>
-    </li>
-  </tools>
-  <recipeMaker>
-    <researchPrerequisite>LongBlades</researchPrerequisite>
-    <skillRequirements>
-      <Crafting>8</Crafting>
-    </skillRequirements>
-  </recipeMaker>
-</ThingDef>
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
 
-<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-  <defName>Levantine_Melee_Altair_Prestige</defName>
-  <label>Levantine Assassins Sword (Prestige)</label>
-  <description>a Much more exotic sword used by the Levantine Brotherhood of Assassins, this one has been gilded with Gold and shows your high ranking status.</description>
-  <graphicData>
-    <texPath>Assassins/AltairSword_Prestige</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <shaderType>CutoutComplex</shaderType>
-    <drawSize>1.15</drawSize>
-  </graphicData>
-  <techLevel>Medieval</techLevel>
-  <statBases>
-    <WorkToMake>23000</WorkToMake>
-    <Mass>2</Mass>
-  </statBases>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2.79</cooldownTime>
+        <armorPenetration>0.25</armorPenetration>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
 
-  <costStuffCount>120</costStuffCount>
-  <costList>
-    <Gold>10</Goldi>
-  </costList>
-  <stuffCategories>
-    <li>Metallic</li>
-  </stuffCategories>
-  <equippedAngleOffset>-65</equippedAngleOffset>
-  <weaponClasses>
-    <li>MeleePiercer</li>
-  </weaponClasses>
-  <weaponTags>
-    <li>MedievalMeleeAdvanced</li>
-  </weaponTags>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>Levantine_Melee_Altair_Prestige</defName>
+    <label>Levantine Assassins Sword (Prestige)</label>
+    <description>a Much more exotic sword used by the Levantine Brotherhood of Assassins, this one has been gilded with Gold and shows your high ranking status.</description>
+    <graphicData>
+      <texPath>Assassins/AltairSword_Prestige</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.15</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <WorkToMake>23000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
 
-  <tools>
-    <li>
-      <label>handle</label>
-      <capacities>
-        <li>Poke</li>
-      </capacities>
-      <power>9</power>
-      <cooldownTime>2</cooldownTime>
-    </li>
-    <li>
-      <label>point</label>
-      <capacities>
-        <li>Stab</li>
-      </capacities>
-      <power>23</power>
-      <cooldownTime>2.6</cooldownTime>
-    </li>
-    <li>
-      <label>edge</label>
-      <labelUsedInLogging>false</labelUsedInLogging>
-      <capacities>
-        <li>Cut</li>
-      </capacities>
-      <power>26</power>
-      <cooldownTime>2.79</cooldownTime>
-      <armorPenetration>0.25</armorPenetration>
-    </li>
-  </tools>
-  <recipeMaker>
-    <researchPrerequisite>LongBlades</researchPrerequisite>
-    <skillRequirements>
-      <Crafting>12</Crafting>
-    </skillRequirements>
-  </recipeMaker>
-</ThingDef>
+    <costStuffCount>120</costStuffCount>
+    <costList>
+      <Gold>
+        10
+      </Gold>
+    </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
 
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2.79</cooldownTime>
+        <armorPenetration>0.25</armorPenetration>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
 
 
 </Defs>

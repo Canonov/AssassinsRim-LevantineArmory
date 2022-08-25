@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>EdenAppleWielder</defName>
+    <hediffClass>AssassinsRim.Hediff_AppleWielder</hediffClass>
+    <descriptionHyperlinks><ThingDef>AppleOfEden</ThingDef></descriptionHyperlinks>
+    <description>This Person wields an Apple of Eden</description>
+    <label>Power of the Apple</label>
+    <!--<defaultLabelColor>(1, 0.8, 0)</defaultLabelColor>-->
+    <isBad>false</isBad>
+    <initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
+    <minSeverity>0</minSeverity>
+    <maxSeverity>1</maxSeverity>
+    <!--<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>-->
+    <stages>
+      <li>
+        <!--<label>Proficient</label>-->
+        <minSeverity>1</minSeverity>
+        <!-- <statFactors>
+
+        </statFactors> -->
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>
