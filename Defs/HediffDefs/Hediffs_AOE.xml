@@ -11,6 +11,7 @@
     <initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
     <minSeverity>0</minSeverity>
     <maxSeverity>1</maxSeverity>
+    <defaultLabelColor></defaultLabelColor>
     <!--<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>-->
     <stages>
       <li>

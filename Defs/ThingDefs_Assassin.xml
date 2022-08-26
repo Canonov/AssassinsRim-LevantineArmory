@@ -437,16 +437,16 @@
     <label>Apple of Eden</label>
     <description>the Standard sword used by the Levantine Brotherhood of Assassins</description>
     <graphicData>
-      <texPath>Assassins/AltairSword</texPath>
+      <texPath>Apple/AppleOfEden</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>1.15</drawSize>
+      <drawSize>1.0</drawSize>
     </graphicData>
     <techLevel>Medieval</techLevel>
     <statBases>
       <Mass>2</Mass>
     </statBases>
-    <equippedAngleOffset>-65</equippedAngleOffset>
+    <equippedAngleOffset>0</equippedAngleOffset>
     <weaponClasses>
       <li>MeleeBlunt</li>
     </weaponClasses>

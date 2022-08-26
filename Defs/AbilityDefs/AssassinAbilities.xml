@@ -1,5 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+  <FleckDef ParentName="FleckGlowDistortBackground">
+    <defName>ACM_Fleck_AppleGlow</defName>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.65</fadeInTime>
+    <solidTime>1.08</solidTime>
+    <fadeOutTime>0.6</fadeOutTime>
+    <growthRate>1.0</growthRate>
+    <graphicData>
+      <texPath>Apple/AppleFireGlow</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckGlowDistortBackground">
+    <defName>ACM_Fleck_PsychicDistortion</defName>
+    <fleckSystemClass>FleckSystemSplash</fleckSystemClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.75</fadeInTime>
+    <solidTime>1.08</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+    <!-- <growthRate>1.5</growthRate>-->
+    <graphicData>
+      <texPath>Apple/AppleFireGlow</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+  </FleckDef>
+
+  <ThingDef ParentName="MoteBase">
+		<defName>ACM_YellowSparkFlash</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.05</solidTime>
+			<fadeOutTime>0.1</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Apple/ElectricalSparkApple</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+		<defName>ACM_TestMote</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.5</solidTime>
+			<fadeOutTime>0.2</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Apple/AppleFireGlow</texPath>
+			<shaderType>MoteGlowPulse</shaderType>
+		</graphicData>
+	</ThingDef>
+
   <VFECore.Abilities.AbilityDef>
     <defName>ACM_Test</defName>
     <label>test (telepathy)</label>
@@ -9,7 +66,7 @@
     <range>19.9</range>
     <iconPath>Apple/Power_ToxicResistance</iconPath>
     <cooldownTime>120</cooldownTime>
-    <castTime>15</castTime>
+    <castTime>60</castTime>
     <chance>0</chance>
     <castSound>PsychicShockLanceCast</castSound>
     <drawAimPie>true</drawAimPie>
@@ -25,9 +82,12 @@
         <neverTargetIncapacitated>false</neverTargetIncapacitated>
       </li>
     </targetingParametersList>
-    <!--<targetFlecks>
-       <li>VFEA_Fleck_PsychicDistortion</li>
-    </targetFlecks>-->
+    <castFleck>ACM_Fleck_AppleGlow</castFleck>
+    <castFleckScale>1.25</castFleckScale>
+    <targetFlecks>
+      <li>ACM_Fleck_PsychicDistortion</li>
+    </targetFlecks>
+    
 
     <requiredHediff>
       <hediffDef>EdenAppleWielder</hediffDef>
@@ -44,13 +104,14 @@
     <label>Force Berserk</label>
     <description>Use the power of the apple to break a Person's mind, flooding it with illusions and forcing them to attack their allies indiscriminately</description>
     <abilityClass>AssassinsRim.AppleAbility_Berserk</abilityClass>
-    <targetMode>Pawn</targetMode>
+    <targetMode>Humanlike</targetMode>
     <range>40.4</range>
     <iconPath>Apple/Power_ToxicResistance</iconPath>
     <cooldownTime>1800</cooldownTime> <!-- is rimworld seconds -->
-    <castTime>15</castTime>
+    <castTime>60</castTime>
     <chance>0</chance>
     <castSound>PsychicShockLanceCast</castSound>
+    <warmupMote>ACM_TestMote</warmupMote>
     <requiredHediff>
       <hediffDef>EdenAppleWielder</hediffDef>
       <minimumLevel>1</minimumLevel>
@@ -103,8 +164,9 @@
     <targetMode>Pawn</targetMode>
     <range>39.4</range>
     <iconPath>Apple/Power_ToxicResistance</iconPath>
-    <cooldownTime>900</cooldownTime> <!-- is rimworld seconds -->
-    <castTime>60</castTime>
+    <cooldownTime>3600</cooldownTime> <!-- is rimworld seconds -->
+    <castTime>120</castTime>
+    <warmupMote>Mote_WarmupNeuroquake</warmupMote>
     <chance>0</chance>
     <castSound>PsychicShockLanceCast</castSound>
     <targetingParametersList>
@@ -115,7 +177,7 @@
         <canTargetSelf>false</canTargetSelf>
         <canTargetLocations>false</canTargetLocations>
         <canTargetBuildings>false</canTargetBuildings>
-        <neverTargetIncapacitated>true</neverTargetIncapacitated>
+        <neverTargetIncapacitated>true</neverTargetIncapacitated> <!-- can't really kill yourself if you're not physically able to -->
       </li>
     </targetingParametersList>
     <requiredHediff>
