@@ -7,6 +7,7 @@ using Verse;
 
 namespace AcMod.Patches
 {
+    /*
     [HarmonyPatch(typeof(GenRecipe), nameof(GenRecipe.PostProcessProduct))]
     public static class Harmony_GenRecipe_PostProcessProduct
     {
@@ -20,6 +21,6 @@ namespace AcMod.Patches
             }
         }
     }
-
+    */
 }
 

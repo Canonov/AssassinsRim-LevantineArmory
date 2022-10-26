@@ -1,4 +1,0 @@
-E:\Pictures\Rimworld Modding\Source\obj\Debug\AcMod.csproj.CoreCompileInputs.cache
-E:\Pictures\Rimworld Modding\Source\obj\Debug\AcMod.csprojAssemblyReference.cache
-E:\Pictures\Rimworld Modding\Source\obj\Debug\AcMod.dll
-E:\Pictures\Rimworld Modding\Source\AcMod.dll
