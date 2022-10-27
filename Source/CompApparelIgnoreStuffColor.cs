@@ -4,6 +4,7 @@ using Verse;
 
 namespace AcMod
 {
+    /*
     public class CompApparelIgnoreStuffColor : CompColorable
     {
         public override void Initialize(CompProperties props)
@@ -17,4 +18,5 @@ namespace AcMod
             parent.Notify_ColorChanged();
         }
     }
+    */
 }
