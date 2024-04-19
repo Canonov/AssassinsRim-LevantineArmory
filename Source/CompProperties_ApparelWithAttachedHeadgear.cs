@@ -1,22 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
+﻿namespace AssassinsRim;
 
-namespace AcMod
+[UsedImplicitly]
+public class CompProperties_ApparelWithAttachedHeadgear : CompProperties
 {
-    public class CompProperties_ApparelWithAttachedHeadgear : CompProperties
+    // ReSharper disable UnassignedField.Global
+    public ThingDef attachedHeadgearDef;
+    public string toggleUiIconPath;
+    // ReSharper restore UnassignedField.Global
+
+    public CompProperties_ApparelWithAttachedHeadgear()
     {
-        public ThingDef attachedHeadgearDef;
-
-        [NoTranslate]
-        public string toggleUiIconPath;
-
-        public CompProperties_ApparelWithAttachedHeadgear()
-        {
-            compClass = typeof(CompApparelWithAttachedHeadgear);
-        }
+        compClass = typeof(CompApparelWithAttachedHeadgear);
     }
 }
