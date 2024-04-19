@@ -1,22 +1,21 @@
-﻿ 
+﻿using System.Reflection;
+using HarmonyLib;
 
-using Verse;
+namespace AssassinsRim;
 
-namespace AcMod
+public class CompApparelIgnoreStuffColor : CompColorable
 {
-    /*
-    public class CompApparelIgnoreStuffColor : CompColorable
+    // ReSharper disable once InconsistentNaming
+    private static FieldInfo Fi_CompColorable_IsActive => AccessTools.Field(typeof(CompColorable), "active");
+        
+    public override void Initialize(CompProperties props)
     {
-        public override void Initialize(CompProperties props)
+        base.Initialize(props);
+        var comp = parent.GetComp<CompColorable>();
+        if (comp != null && !comp.Active)
         {
-            base.Initialize(props);
-            CompColorable comp = parent.GetComp<CompColorable>();
-            if (comp != null && !comp.active)
-            {
-                parent.GetComp<CompColorable>().active = true;
-            }
-            parent.Notify_ColorChanged();
+            Fi_CompColorable_IsActive.SetValue(comp, true);
         }
+        parent.Notify_ColorChanged();
     }
-    */
 }
