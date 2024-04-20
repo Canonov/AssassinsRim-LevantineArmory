@@ -5,8 +5,8 @@
     <LangVersion>10</LangVersion>
     <AssemblyTitle>AcMod</AssemblyTitle>
     <Product>AcMod</Product>
-    <Copyright>Copyright ©  2020</Copyright>
-    <AssemblyVersion>1.1.0</AssemblyVersion>
+    <Copyright>Copyright ©Canonov 2024</Copyright>
+    <AssemblyVersion>1.1.1</AssemblyVersion>
     <FileVersion>1.1.0</FileVersion>
     <RootNamespace>AssassinsRim</RootNamespace>
   </PropertyGroup>
@@ -26,19 +26,18 @@
     <OutputPath>..\1.5\Assemblies\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject />
+    <StartupObject/>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.*" />
-    <PackageReference Include="Lib.Harmony" Version="2.3.*" ExcludeAssets="runtime" />
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.*"/>
+    <PackageReference Include="Lib.Harmony" Version="2.3.*" ExcludeAssets="runtime"/>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Data.DataSetExtensions"/>
+    <Reference Include="Microsoft.CSharp"/>
+    <Reference Include="System.Net.Http"/>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Patches\" />
-    <Folder Include="Properties\" />
+    <Folder Include="Patches\"/>
   </ItemGroup>
 </Project>
